@@ -1,0 +1,17 @@
+service: "service:AudioClassificationService"
+description: "A model to detect deep fake audio"
+labels:
+  owner: "Abdulla Kayyani"
+  project: "Audio classification"
+include:
+  - "service.py"
+  - "requirements.txt"
+  - "models/*.pt"
+python:
+  requirements_txt: "./requirements.txt"
+docker:
+  system_packages:
+    - libsndfile1
+    - ffmpeg
+  distro: debian
+  python_version: "3.10"

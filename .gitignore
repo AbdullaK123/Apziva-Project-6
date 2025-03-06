@@ -1,0 +1,6 @@
+__pycache__
+fake_examples
+slim.report.json
+audio_classifier_api
+test_script.py
+save_model.py
